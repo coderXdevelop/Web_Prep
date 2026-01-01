@@ -1,6 +1,25 @@
 1.Add New Course 
 index.html-->Product :
- <button onclick="addProduct(700)">Crypto Trading – ₹700</button>
+ <article class="course card" data-id="crypto" data-price="700.00" tabindex="0">
+    <h3>Crypto Trading Essentials</h3>
+    <p class="muted">6 weeks • Intermediate</p>
+
+    <p>
+        Learn cryptocurrency markets, trading strategies, and risk management.
+        <strong>Course Fee: ₹700</strong>
+    </p>
+
+    <ul>
+        <li>Crypto market structure & exchanges</li>
+        <li>Spot & futures trading basics</li>
+        <li>Risk management & volatility control</li>
+    </ul>
+
+    <div class="course-cta">
+        <button class="add-btn">Add to cart</button>
+    </div>
+</article>
+
 
 
 2.CSS Change

@@ -74,10 +74,31 @@ script.js-->(add new function):
 
 
 6.Discount on Purchase >1000
-script.js-->addproduct :
- if (total > 1000) {
-    total = total - (total * 0.10);
+script.js-->(add new function):
+ function discountedTotal() {
+    const total = cartTotal();
+
+    if (total > 1000) {
+        return total * 0.90; // 10% discount
+    }
+    return total;
  }
+
+script.js-->UpdateBadge:
+ CHANGE --> cartTotalEl.textContent =
+    cart.length ? '₹' + cartTotal().toFixed(2) : '₹0.00';
+ TO --> const total = discountedTotal();
+ cartTotalEl.textContent =
+    cart.length ? '₹' + total.toFixed(2) : '₹0.00';
+
+script.js-->checkoutBtn.addEventListener('click', ...):
+ CHANGE --><strong>₹${cartTotal().toFixed(2)}</strong>
+ TO --><strong>₹${discountedTotal().toFixed(2)}</strong> (10% discount applied)
+
+script.js-->modalSubmit.addEventListener('click', ...):
+ CHANGE -->const amount = cartTotal();
+ TO -->const amount = discountedTotal();
+
 
 
 7.Download submission

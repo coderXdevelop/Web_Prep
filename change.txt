@@ -33,6 +33,7 @@ Below This code-->(add new botton):
  <button class="toggle-offers-btn" onclick="toggleOffers()">
     Show / Hide Offers
  </button>
+
 style.css-->(add new style code at end):
  /* Show / Hide Offers Button */
  .toggle-offers-btn {
@@ -59,6 +60,7 @@ style.css-->(add new style code at end):
     border-radius: 6px;
     color: #0f172a;
  }
+
 script.js-->(add new function):
  function toggleOffers() {
     let section = document.getElementById("offers");

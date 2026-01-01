@@ -20,13 +20,7 @@ Both are handled just show the function!!
 
 
 4.Botton To Clear & Thankyou
-index.html-->form:
- <button type="button" onclick="clearForm()">Clear Form</button>
-script.js-->(make new function):
- function clearForm() {
-    document.getElementById("feedbackForm").reset();
-    document.getElementById("thankyou").innerText = "Thank you!";
- }
+rest option is already there show that!!
 
 
 5.Add Offer Section 

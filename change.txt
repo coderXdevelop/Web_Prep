@@ -2,6 +2,7 @@
 index.html-->Product :
  <button onclick="addProduct(700)">Crypto Trading – ₹700</button>
 
+
 2.CSS Change
 Style.css--> Body / Botton:
  body {
@@ -13,6 +14,7 @@ Style.css--> Body / Botton:
     background: green;
  }
 
+
 3.Email & Mobile Validation
 script.js-->Feedback Form Submitter:
 (Email is already handled)
@@ -20,6 +22,7 @@ script.js-->Feedback Form Submitter:
     alert("Please enter a valid 10-digit mobile number");
     return;
  }
+
 
 4.Botton To Clear & Thankyou
 index.html-->form:
@@ -29,6 +32,7 @@ script.js-->(make new function):
     document.getElementById("feedbackForm").reset();
     document.getElementById("thankyou").innerText = "Thank you!";
  }
+
 
 5.Add Offer Section 
 intex.html--> (create new Div):
@@ -49,12 +53,43 @@ script.js-->(add new function):
     }
  }
 
+
 6.Discount on Purchase >1000
 script.js-->addproduct :
  if (total > 1000) {
     total = total - (total * 0.10);
  }
 
-7.
+
+7.Download submission
+script.js-->(already there):
+ show downloadsubmission folder's code
+ let data =
+    "Email: " + email + "\n" +
+    "Mobile: " + mobile + "\n";
+
+ let blob = new Blob([data], { type: "text/plain" });
+
+ let a = document.createElement("a");
+ a.href = URL.createObjectURL(blob);
+ a.download = "feedback.txt";
+ a.click();
+
+8.Add Cristmas Offer
+index.html-->head:
+ <style>
+ .offer {
+    background: #ffe4b5;
+    padding: 20px;
+ }
+ </style>
+index.html-->Body:
+ <div class="offer">
+    <h2>Christmas / New Year Special Offers</h2>
+    <p>Flat discounts available!</p>
+ </div>
+
+
+
 
 

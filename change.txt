@@ -118,11 +118,28 @@ script.js-->(already there):
 8.Add Cristmas Offer
 index.html-->head:
  <style>
- .offer {
-    background: #ffe4b5;
-    padding: 20px;
- }
- </style>
+.offer {
+    background: linear-gradient(135deg, #fff7ed, #ffe4b5);
+    padding: 24px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border-left: 6px solid #f97316;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.offer h2 {
+    margin-bottom: 8px;
+    color: #9a3412;
+    font-size: 22px;
+}
+
+.offer p {
+    color: #7c2d12;
+    font-size: 15px;
+}
+</style>
+
 index.html-->Body:
  <div class="offer">
     <h2>Christmas / New Year Special Offers</h2>

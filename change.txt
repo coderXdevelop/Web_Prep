@@ -1,0 +1,24 @@
+1.Add New Course 
+index-->Product :
+ <button onclick="addProduct(700)">Crypto Trading – ₹700</button>
+
+2.CSS Change
+Style.css--> Body / Botton:
+ body {
+    background-color: #0f172a;
+    font-family: Arial, sans-serif;
+ }
+              OR
+ button {
+    background: green;
+ }
+
+3.Email & Mobile Validation
+script.js-->Feedback Form Submitter:
+(Email is already handled)
+ if (mobile.length !== 10 || isNaN(mobile)) {
+    alert("Please enter a valid 10-digit mobile number");
+    return;
+ }
+
+4.

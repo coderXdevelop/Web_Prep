@@ -1,5 +1,5 @@
 1.Add New Course 
-index-->Product :
+index.html-->Product :
  <button onclick="addProduct(700)">Crypto Trading – ₹700</button>
 
 2.CSS Change
@@ -21,4 +21,40 @@ script.js-->Feedback Form Submitter:
     return;
  }
 
-4.
+4.Botton To Clear & Thankyou
+index.html-->form:
+ <button type="button" onclick="clearForm()">Clear Form</button>
+script.js-->(make new function):
+ function clearForm() {
+    document.getElementById("feedbackForm").reset();
+    document.getElementById("thankyou").innerText = "Thank you!";
+ }
+
+5.Add Offer Section 
+intex.html--> (create new Div):
+ <div id="offers">
+    <h2>Special Offers</h2>
+    <p>Flat discounts available on selected courses.</p>
+ </div>
+Below This code-->(add new botton):
+ <button onclick="toggleOffers()">Show / Hide Offers</button>
+script.js-->(add new function):
+ function toggleOffers() {
+    let section = document.getElementById("offers");
+
+    if (section.style.display === "none") {
+        section.style.display = "block";
+    } else {
+        section.style.display = "none";
+    }
+ }
+
+6.Discount on Purchase >1000
+script.js-->addproduct :
+ if (total > 1000) {
+    total = total - (total * 0.10);
+ }
+
+7.
+
+

@@ -16,12 +16,7 @@ Style.css--> Body / Botton:
 
 
 3.Email & Mobile Validation
-script.js-->Feedback Form Submitter:
-(Email is already handled)
- if (mobile.length !== 10 || isNaN(mobile)) {
-    alert("Please enter a valid 10-digit mobile number");
-    return;
- }
+Both are handled just show the function!!
 
 
 4.Botton To Clear & Thankyou

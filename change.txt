@@ -53,10 +53,11 @@ style.css-->(add new style code at end):
  /* Offers section styling */
  #offers {
     margin-top: 15px;
-    padding: 15px;
-    background-color: #fef3c7;
-    border-left: 5px solid #f59e0b;
+    padding: 16px;
+    background-color: #e0f2fe;   /* light blue */
+    border-left: 5px solid #0284c7;
     border-radius: 6px;
+    color: #0f172a;
  }
 script.js-->(add new function):
  function toggleOffers() {
